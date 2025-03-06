@@ -1,0 +1,77 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #548687;
+    text-align: center;
+}
+
+.container{
+    height:70vh; 
+    display:flex;/* for taking the game box in the center*/
+    justify-content: center;/* for taking the game box in the center*/
+    align-items: center;/* for taking the game box in the center*/
+}
+
+.game{
+    height:60vmin; /* 1% of the viewport's smaller dimention*/
+    width:60vmin;
+    display:flex; /*for getting the boxes in one line*/
+    flex-wrap:wrap;/*to adjust the flexes that are in one line to another line if there is no space in the line*/
+    justify-content: center;/*for getting game in the center*/
+    align-items: center; /*for getting game in the center */
+    gap:1.5vmin;/* for gap b/w the boxes*/
+}
+
+.box{
+height:18vmin;
+width:18vmin;
+border-radius:1rem;/*to curve the edges of the boxes*/
+border:none;
+box-shadow:0 0 1rem rgba(0,0,0,0.3); /*0.3 is for opacity */
+font-size:8vmin; /*generally it could be in pixels or rem , but since here we have height and width in vmin so using the same*/
+color:#b0413e;
+background-color:#ffffc7;
+
+}
+
+#reset-btn{
+    padding:1rem;
+    font-size:1.25;
+    background-color: #191913;
+    color:#fff;
+    border-radius:1rem;
+    border:none;
+
+}
+
+#new-btn{
+    padding:1rem;
+    font-size:1.25;
+    background-color: #191913;
+    color:#fff;
+    border-radius:1rem;
+    border:none; 
+}
+
+#msg{
+    color:#ffffc7;
+    font-size:8vmin;
+}
+
+.msg-container{
+    height:100vmin;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    gap:4rem;
+}
+
+.hide{
+   display:none; 
+}
+
+ 
